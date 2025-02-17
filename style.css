@@ -1,0 +1,109 @@
+body {
+  background-color: #001f3f;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 20px;
+  font-size: 24px;
+  background: #002f5f;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  overflow: hidden;
+  padding: 20px;
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
+.carousel-item {
+  width: 200px;
+  height: 200px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.carousel-item img:hover {
+  transform: scale(1.1);
+}
+
+#all-phones {
+  margin-top: 50px;
+}
+
+.phone-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.phone-grid div {
+  background-color: #003366;
+  padding: 15px;
+  border-radius: 10px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.phone-grid div:hover {
+  background: #004488;
+  transform: scale(1.05);
+}
+.phone-grid div {
+  background-color: #003366;
+  padding: 15px;
+  border-radius: 10px;
+  transition: background 0.3s, transform 0.3s;
+  text-align: center;
+}
+
+.phone-grid img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.phone-grid div:hover {
+  background: #004488;
+  transform: scale(1.05);
+}
+
+.phone-grid p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: white;
+}
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  overflow: hidden;
+  padding: 20px;
+  position: relative;
+  transition: transform 0.5s ease-in-out;
+  white-space: nowrap;
+}
+
+.carousel-item {
+  display: inline-block;
+  transition: transform 0.5s ease-in-out;
+}
