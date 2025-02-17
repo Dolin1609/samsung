@@ -54,12 +54,18 @@ document.querySelectorAll(".phone-grid div").forEach(phone => {
       window.location.href = `phones/${phoneName}.html`; // Redirect to a details page
   });
 });
-<script>
+<><script>
     const carouselItems = document.querySelectorAll('.carousel-item img');
-    carouselItems.forEach(item => {
-        item.addEventListener('click', (e) => {
-            // Change image on click (example)
-            item.src = 'images/s25ultra/s25ultra_2.png'; // Update with a new image path
-        });
+    carouselItems.forEach(item => {item.addEventListener('click', (e) => {
+        // Change image on click (example)
+        item.src = 'images/s25ultra/s25ultra_2.png'; // Update with a new image path
+    })};
     });
-</script>
+</script><img src="images/s25ultra/s25ultra_1.png" alt="Samsung S25 Ultra">
+    </></>
+function showItem(index) {
+    // Hide all items
+    carouselItems.forEach(item => item.style.display = 'none');
+    // Show the current item
+    carouselItems[index].style.display = 'block';
+}
